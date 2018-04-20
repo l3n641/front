@@ -374,7 +374,7 @@ body {
     // 导航区域
     // 导航分类
     $.ajax({
-        url: 'http://140.82.55.32/api/symbol_rule/index',
+        url: 'http://lhb.caiyunsecurity.com/api/symbol_rule/index',
         type: 'get',
         success: function (data) {
            console.log(data)
@@ -384,7 +384,7 @@ body {
     })
      $("#selected1").on("click",function(){
             $.ajax({
-                url:"http://140.82.55.32/api/exchange",
+                url:"http://lhb.caiyunsecurity.com/api/exchange",
                 type:"get",      
                 success:function(data){
                 //     console.log(typeof data);
@@ -397,7 +397,7 @@ body {
         });
         $("#input1").on("click",function(){
             $.ajax({
-                url:"http://140.82.55.32/api/symbol?id=2",
+                url:"http://lhb.caiyunsecurity.com/api/symbol?id=2",
                 type:"get",      
                 success:function(data){
                 console.log(data)

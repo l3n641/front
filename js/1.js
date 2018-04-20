@@ -74,7 +74,7 @@ var page=1;
 var myAjax=function(){
 
     $.ajax({
-        url: 'http://140.82.55.32/index.php/api/symbol_rule/index',
+        url: 'http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/index',
         type: 'get',
         success: function (data) {
             storeData=data.data
@@ -117,7 +117,7 @@ $(function () {
 
 
     $.ajax({
-        url: 'http://140.82.55.32/index.php/api/exchange',
+        url: 'http://lhb.caiyunsecurity.com/index.php/api/exchange',
         type: 'get',
         success: function (data) {
             console.log(data)
@@ -170,7 +170,7 @@ $("#input1").on("keyup",function(e){
     var currentValue= sessionStorage.getItem("currentValue")
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchbase?id=${currentValue}&&base=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchbase?id=${currentValue}&&base=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -200,7 +200,7 @@ $("#input4").on("keyup",function(e){
     var currentValue1= sessionStorage.getItem("currentValue1")
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchbase?id=${currentValue1}&&base=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchbase?id=${currentValue1}&&base=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -230,7 +230,7 @@ $("#input0").on("keyup",function(e){
     var currentValue0= sessionStorage.getItem("currentValue0")
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchbase?id=${currentValue0}&&base=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchbase?id=${currentValue0}&&base=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -261,7 +261,7 @@ $("#input10").on("keyup",function(e){
     var currentValue2= sessionStorage.getItem("currentValue2")
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchbase?id=${currentValue2}&&base=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchbase?id=${currentValue2}&&base=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -298,7 +298,7 @@ $("#input88").on("keyup",function(e){
     var basevalue=$(".datalist1 li").html()
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchQuote?id=${currentValue}&&base=${basevalue}&&quote=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchQuote?id=${currentValue}&&base=${basevalue}&&quote=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -331,7 +331,7 @@ $("#input22").on("keyup",function(e){
     console.log(basevalue1)
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchQuote?id=${currentValue1}&&base=${basevalue1}&&quote=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchQuote?id=${currentValue1}&&base=${basevalue1}&&quote=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -362,7 +362,7 @@ $("#input00").on("keyup",function(e){
     var basevalue0=$(".datalist0 li").html()
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchQuote?id=${currentValue0}&&base=${basevalue0}&&quote=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchQuote?id=${currentValue0}&&base=${basevalue0}&&quote=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -393,7 +393,7 @@ $("#input010").on("keyup",function(e){
     var basevalue93=$(".datalist93 li").html()
     $.ajax({
 
-        url:`http://140.82.55.32/index.php/api/symbol/searchQuote?id=${currentValue2}&&base=${basevalue93}&&quote=${e.target.value}`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol/searchQuote?id=${currentValue2}&&base=${basevalue93}&&quote=${e.target.value}`,
 
         type:"get",
         success:function(data){
@@ -475,7 +475,7 @@ $(".content1").on("click",".deleteData",function(e){
 
 
                     $.ajax({
-                        url:`http://140.82.55.32/index.php/api/symbol_rule/delete/id/${idValue}`,
+                        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/delete/id/${idValue}`,
                         type:"get",
                         success:function (data) {
                             console.log(data)
@@ -499,7 +499,7 @@ $("#forthchild1 a").click(function () {
     console.log(exchange_id)
 
     $.ajax({
-        url:`http://140.82.55.32/index.php/api/symbol_rule/save`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/save`,
         type:"post",
         data:{
             type:type,
@@ -530,7 +530,7 @@ $("#forthchild2 a").click(function () {
     console.log(exchange_id)
 
     $.ajax({
-        url:`http://140.82.55.32/index.php/api/symbol_rule/save`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/save`,
         type:"post",
         data:{
             type:type,
@@ -560,7 +560,7 @@ $("#forthchild0 a").click(function () {
     console.log("id"+exchange_id)
 
     $.ajax({
-        url:`http://140.82.55.32/index.php/api/symbol_rule/save`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/save`,
         type:"post",
         data:{
             type:type,
@@ -592,7 +592,7 @@ $("#forthchild11 a").click(function () {
     console.log(exchange_id)
 
     $.ajax({
-        url:`http://140.82.55.32/index.php/api/symbol_rule/save`,
+        url:`http://lhb.caiyunsecurity.com/index.php/api/symbol_rule/save`,
         type:"post",
         data:{
             type:type,
